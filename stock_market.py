@@ -23,6 +23,7 @@ st.write(data)
 
 st.line_chart(data['Close'])
 st.bar_chart(data)
+st.bar_chart(data['Close']) # Volume
 
 # Linear regression, xgboost, Decision Tree, random forest, SVR, decision tree regressor, KNN
 # After buiding the model save it using pickle.

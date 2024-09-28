@@ -10,6 +10,11 @@ st.header("Bar Chart", divider="gray")
 #st.header("Two", divider=True)
 #st.header("Three", divider=True)
 #st.header("Four", divider=True)
+
+#code = '''def hello():
+#    print("Hello, Streamlit!")'''
+#st.code(code, language="python")
+
 df = pd.read_csv('cars24-car-price.csv')
 st.dataframe(df.head(2))
 st.bar_chart(data=df, x='fuel_type',y='mileage')
